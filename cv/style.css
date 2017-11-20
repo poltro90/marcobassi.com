@@ -239,7 +239,9 @@ a.button:hover {
 
 
 /*Print css*/
-
+.visible-print {
+  display: none;
+}
 @media print {
   a[href], 
   a[href]:visited {
@@ -252,5 +254,8 @@ a.button:hover {
   a[href].button:after,
   a[href].print-no-link:after {
     content: "";
+  }
+  .visible-print {
+    display: block;
   }
 }
