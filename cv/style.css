@@ -22,6 +22,10 @@ h1.title {
   margin-bottom: 0px;
 }
 
+.hide {
+  display: none;
+}
+
 .subtitle {
   font-style: italic;
   color: #d3d3d3;
@@ -41,10 +45,12 @@ h1.title {
   clear: both;
   width: 100%;
   display: table;
+  box-sizing: border-box;
 }
 .col-4, .col-6, .col-8 {
   float: left;
   position: relative;
+  box-sizing: border-box;
 }
 .col-4 > div,
 .col-6 > div, 
@@ -235,6 +241,22 @@ a.button:hover {
 
 .code-tag.js {
   background: #ffcc00;
+}
+
+
+/* Sections */
+.section-head {
+  background: #f9f9f9;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+.section-head h3 {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .section-head {
+    padding: 10px 20px;
+  }
 }
 
 
