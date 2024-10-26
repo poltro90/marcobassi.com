@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <!-- Yes, I'm tracking you. Sorry :) -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-37980493-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-37980493-1');
+    </script>
+    <title>Marco Bassi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="cv/src/fonts/css/font-awesome.min.css" />
+    <style>
+      body {
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+      }
+      a,
+      a:visited {
+        text-decoration: none;
+        color: #a3a3a3;
+        opacity: 0.4;
+      }
+      a:hover,
+      a:focus {
+        color: #a3a3a3;
+        opacity: 0.6;
+      }
+      .grid-container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: '.' 'gc5' 'gc8';
+      }
+      .gc5 {
+        grid-area: gc5;
+      }
+      .gc8 {
+        grid-area: gc8;
+        position: relative;
+      }
+      .avatar {
+        margin: auto;
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -webkit-filter: grayscale(90%);
+        filter: grayscale(90%);
+        overflow: hidden;
+      }
+      .avatar img {
+        width: 100%;
+        height: 100%;
+      }
+      .external-links {
+        font-size: 2rem;
+        margin-top: 1rem;
+      }
+      .external-links a {
+        margin: 0.25rem;
+      }
+      .flag {
+        height: 12px;
+        width: auto;
+      }
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: #a3a3a3;
+        opacity: 0.4;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href="cv/src/img/avatar.jpg">
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="gc5">
+        <div>
+          <div class="avatar">
+            <img src="cv/src/img/avatar.jpg" alt="Marco Bassi" />
+          </div>
+        </div>
+        <div class="external-links">
+          <a
+            href="https://www.linkedin.com/in/marcobassi/"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="LinkedIn"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a
+            href="https://twitter.com/poltro90"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="Twitter"
+          >
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a
+            href="https://github.com/poltro90"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="GitHub"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+          <a
+            href="./cv"
+            alt="CV"
+          >
+            <i class="fa fa-file-text"></i>
+          </a>
+        </div>
+      </div>
+      <div class="gc8">
+        <div class="footer">
+          &copy; 
+          <span id="year">
+            <noscript>2021</noscript>
+          </span>
+          <script type="text/javascript">
+              document.getElementById("year").innerHTML = (new Date()).getFullYear();
+          </script>
+          - Marco Bassi
+          <br />
+          Made with <i class="fa fa-heart"></i> in
+          <img src="cv/src/img/europe-logo.gif" class="flag" /> Europe
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
