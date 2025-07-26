@@ -357,13 +357,17 @@ div.divider {
     display: block;
   }
 
+  .hidden-print {
+    display: none;
+  }
+
   .avatar {
     width: 100px;
   }
 
   .grid-print-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 
   .print-small {
